@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="imgBox" class="group">
+
+        <img class="img group" src="https://www.creativeocean.com/dev/img/forest.jpg" />
+
+        <div class="svgWrapper">
+
+            <svg id="svgRoot" width="800" height="1200" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                xmlns:xlink="https://www.w3.org/1999/xlink">
+                <defs id="defs">
+                    <mask id="m1">
+                        <circle id="masker" cx="0" cy="0" r="75" fill="#fff" />
+                    </mask>
+                </defs>
+                <g id="mag">
+                    <circle cx="0" cy="2" r="75" fill="none" stroke="rgba(0,0,0,0.5)" stroke-width="4" />
+                </g>
+                <image id="imgZoom" mask="url(#m1)" x="0" y="0" width="1200" height="1800"
+                    xlink:href="https://www.creativeocean.com/dev/img/forest.jpg"></image>
+            </svg>
+
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
